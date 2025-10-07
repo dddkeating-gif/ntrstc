@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NTRSTC — Admin</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container hero small">
+      <div class="brand onlytext">
+        <h1>NTRSTC<span class="sub">ADMIN</span></h1>
+        <p class="tag">Phone‑friendly editor</p>
+      </div>
+    </div>
+    <nav class="container nav">
+      <a href="index.html">Feed</a>
+      <a href="admin.html" class="active">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form id="postForm" class="card form">
+      <label>Title<input name="title" required placeholder="Headline"></label>
+      <label>URL (optional)<input name="url" placeholder="https://link.to/source"></label>
+      <label>Excerpt<textarea name="excerpt" rows="3" placeholder="One‑sentence summary"></textarea></label>
+      <label>Tags (comma separated)<input name="tags" placeholder="ai, policy, music"></label>
+      <div class="twocol">
+        <label>Date<input name="date" type="datetime-local"></label>
+        <label>Image URL<input name="image" placeholder="https://... (optional)"></label>
+      </div>
+      <button type="submit" class="primary">Add to feed</button>
+    </form>
+
+    <section class="controls">
+      <button id="exportBtn" class="secondary">Export posts.json</button>
+      <button id="clearBtn" class="danger">Clear local drafts</button>
+    </section>
+
+    <section id="drafts" class="feed-grid"></section>
+  </main>
+
+  <footer class="container footer">
+    <span>Tip: Use Export, replace posts.json in your host, refresh.</span>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

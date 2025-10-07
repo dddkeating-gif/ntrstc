@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "id": "seed-1",
+      "title": "NTRSTC goes live",
+      "excerpt": "Welcome to the interstice \u2014 a crisp daily feed from the seams between culture, tech, and signal.",
+      "url": "",
+      "image": "",
+      "tags": [
+        "launch",
+        "meta"
+      ],
+      "date": "2025-10-06T22:15:53.122932Z"
+    },
+    {
+      "id": "seed-2",
+      "title": "Prototype mindset for daily curation",
+      "excerpt": "Small, frequent, coherent. Publish daily; correct tomorrow.",
+      "url": "",
+      "image": "",
+      "tags": [
+        "workflow"
+      ],
+      "date": "2025-10-06T19:15:53.122952Z"
+    }
+  ]
+}

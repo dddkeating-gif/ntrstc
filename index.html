@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NTRSTC — Interstice</title>
+  <meta name="description" content="NTRSTC daily feed — clean, fast, mobile-first news micro‑publication.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container hero">
+      <img src="assets/header.jpg" alt="NTRSTC Header" class="hero-logo" onerror="this.style.display='none'">
+      <div class="brand">
+        <h1>NTRSTC<span class="sub">INTERSTICE</span></h1>
+        <p class="tag">Daily signals from the seams between things.</p>
+      </div>
+    </div>
+    <nav class="container nav">
+      <a href="index.html" class="active">Feed</a>
+      <a href="admin.html">Admin</a>
+      <a href="#" id="installBtn" style="display:none">Install App</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="feed" class="feed-grid" aria-live="polite"></section>
+    <button id="loadMore" class="load-more">Load more</button>
+  </main>
+
+  <footer class="container footer">
+    <span>© <span id="y"></span> NTRSTC</span>
+    <span>Built for speed. No cookies. No tracking.</span>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>
