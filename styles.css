@@ -43,3 +43,37 @@ a{color:var(--fg);text-decoration:none}
 .danger{background:#1a0f0f;color:#ffb3b3}
 .controls{display:flex;gap:12px;margin:12px 0}
 .onlytext h1{font-size:22px}
+
+/* Hero banner adjustments */
+.hero {
+  display: block;
+  padding: 0;
+}
+
+.hero-banner {
+  width: 100%;
+  min-height: clamp(180px, 30vh, 480px);
+  background-image: url("assets/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.10));
+}
+
+/* Adjust nav padding when using banner */
+.nav {
+  padding: 10px 0 16px 0;
+}
